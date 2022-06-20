@@ -15,6 +15,24 @@ const App = () => {
   const setToValue = (rating, other) => {
       other(rating + 1)
   } 
+
+  const Total = () => {
+    return (
+      good + bad + neutral
+    )
+  }
+
+  const Average = () => {
+    return (
+     (good - bad) / (good + bad + neutral)
+    )
+  }
+
+  const Positive = () => {
+    return (
+      (good / (good + bad + neutral)) * 100
+    )
+  }
   
 
   return (
@@ -28,6 +46,9 @@ const App = () => {
       <div>good {good}</div> 
       <div>neutral {neutral}</div>
       <div>bad {bad}</div>
+      <div>total <Total /></div>
+      <div>average <Average /></div>
+      <div>positive <Positive />%</div>
 
       </div>
   )
