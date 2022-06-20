@@ -41,13 +41,25 @@ const App = () => {
       )
     }
     return (
-      <>
-        <div>good {good}</div>
-        <div>neutral {neutral}</div>
-        <div>bad {bad}</div>
-        <div>average <Average /></div>
-        <div>positive <Positive />%</div>
-      </>
+      <table>
+        <tbody>
+        <tr> 
+          <td>good</td><td>{good}</td> 
+        </tr>
+        <tr>
+          <td>neutral</td><td>{neutral}</td>
+        </tr>
+        <tr>
+          <td>bad</td><td>{bad}</td>
+        </tr>
+        <tr>
+          <td>average</td><td><Average /></td>
+        </tr>
+        <tr>
+          <td>positive</td><td><Positive />%</td>
+        </tr>
+        </tbody>
+      </table>
     )
 
     
